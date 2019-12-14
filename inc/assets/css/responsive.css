@@ -69,6 +69,18 @@
 	#normal-countdown .time-sec .main-time{ line-height: 45px; font-size: 1.5em;}
 	
 	#normal-countdown .time-sec span{ font-size: .85em; }
+
+	.main-area-wrapper::after {
+		content: "Image © Devon Rockola - pexels.com";
+		color: #F5F5F5;
+		font-size: .78rem;
+		position: absolute;
+		bottom: .5rem;
+		z-index: 9;
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
 	
 }
 

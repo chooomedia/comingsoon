@@ -124,7 +124,7 @@ html {
 --------------------------------- */
 
 .main-area-wrapper{ height: 100%; padding: 30px; }
-.main-area-wrapper::after {content: "© Devon Rockola - pexels.com";
+.main-area-wrapper::after {content: "Image © Devon Rockola - pexels.com";
     color: #F5F5F5;
     font-size: .78rem;
     position: absolute;
