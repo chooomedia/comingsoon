@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Comming sooon! CHOOOMEDIA</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/viw6wof.css">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+		
+	<link href="05-comming-soon/css/styles.css" rel="stylesheet">
+	
+	<link href="05-comming-soon/css/responsive.css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<div class="main-area-wrapper">
+		<div class="main-area center-text" style="background-image:url(images/countdown-5-1600x900.jpg);">
+			
+			<div class="display-table">
+				<div class="display-table-cell">
+					<div class="logo">
+						<a href="http://chooomedia.de/" title="Agentur besuchen">
+							<img src="http://img.chooo.de/logo_big.png" alt="CHOOOMEDIA Logo" />
+						</a>
+					</div>
+					
+					<h1 class="title">
+					<div class="urlName"></div>
+					<b>Comming Sooon</b>
+					</h1>
+					<p class="desc font-white"><span class="urlName"></span> wird gerade für Sie gebaut.<br>
+						Unsere Entwickler und Designer arbeiten mit Hochdruck damit Sie bald bares Geld sparen können.</p>
+					
+					<div id="normal-countdown" data-date="2020/02/28"></div>
+					
+					<a class="notify-btn" href="mailto:hello@chooo.media?subject=CHOOOMEDIA%20News%20Anfrage%20Betreff&body=Hallo%20CHOOOMEDIA%20bitte,%0D%0A%0D%0Ahalten%20Sie%20mich%20auf%20dem%20Laufenden."><b>NACHRICHT AN UNS</b></a>
+
+					<ul class="social-btn">
+						<li class="list-heading"></li>
+						<li><a href="https://www.facebook.com/CHoooMedia/"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/chooo.media/"><i class="ion-social-instagram-outline"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/chooomedia/"><i class="ion-social-linkedin"></i></a></li>
+						<li><a href="https://github.com/chooomedia"><i class="ion-social-github"></i></a></li>
+						<li><a href="https://www.youtube.com/user/chooomedia"><i class="ion-social-youtube"></i></a></li>
+					</ul>
+					
+				</div><!-- display-table -->
+			</div><!-- display-table-cell -->
+		</div><!-- main-area -->
+	</div><!-- main-area-wrapper -->
+		
+	<!-- SCRIPTS -->
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+	<script src="common-js/jquery.countdown.min.js"></script>
+	<script src="common-js/scripts.js"></script>
+	<script>
+		jQuery( function ($) {
+			// CATCH URL NAME
+			let urlName = window.location.origin;
+			let shortUrl = urlName.slice(7, 22);
+				$('.urlName').html(shortUrl);
+		});
+
+	</script>
+	
+</body>
+</html>
