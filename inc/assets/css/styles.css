@@ -26,10 +26,15 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+:root  {
+	--primary: #e11b1a;
+	--secondary: #262626;
+}
+
 html{ font-size: 100%; height: 100%; width: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
 
 
-body{ font-size: 20px; font-family: 'manjari', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+body{ background: var(--secondary); font-size: 20px; font-family: 'Roboto', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; overflow-x: hidden; 
 	color: #333; }
 
@@ -37,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; paddi
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
-h1,h2,h3{ font-family: 'manjari', sans-serif; }
+h1,h2,h3{ font-family: 'Roboto', sans-serif; }
 
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 
@@ -120,15 +125,16 @@ html {
 
 .main-area-wrapper{ height: 100%; padding: 30px; }
 
-.main-area{ position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
-	box-shadow: 2px 5px 30px rgba(0,0,0,.3); color: #fff; }
+.main-area{ border-radius: 6px !important;
+    overflow: hidden; position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
+	box-shadow: 2px 5px 30px rgba(255,255,255,.3); color: #fff; }
 
 .main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
-	opacity: .4; background: #000; border-radius: 6px; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);}
+	opacity: .4; background: #000; border-radius: 3px; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);}
 
 .main-area .desc{ margin: 20px auto; max-width: 500px; }
 	
-.main-area .notify-btn{ margin: 20px 0 50px; padding: 20px 35px 13px 35px; border-radius: 4px; color: #fff; background: #0099CC; border: 1px solid #0099CC; font-weight: 500; }
+.main-area .notify-btn{ margin: 20px 0 50px; padding: 20px 35px 13px 35px; border-radius: 4px; color: #fff; background: var(--primary); border: 1px solid var(--primary); font-weight: 500; }
 
 .main-area .notify-btn:hover{ background: none; }
 
@@ -140,7 +146,7 @@ html {
 #normal-countdown .time-sec{ position: relative; display: inline-block; margin: 10px; height: 90px; width: 90px; 
 	border-radius: 100px; background: #fff; color: #333; }
 
-#normal-countdown .time-sec .main-time{ margin-top: 10px; font-weight: 500; line-height: 76px; font-size: 2em; color: #0099CC; }
+#normal-countdown .time-sec .main-time{ font-weight: 500; line-height: 76px; font-size: 2em; color: var(--primary); }
 
 #normal-countdown .time-sec span{ position: absolute; top: 64%; bottom: 20px; left: 50%; transform: translateX(-50%);
 	font-size: .9em; font-weight: 600; }
