@@ -9,14 +9,11 @@
 	
 	<!-- Font -->
 	<link rel="stylesheet" href="https://use.typekit.net/viw6wof.css">
-	
 	<link href="inc/assets/css/ionicons.css" rel="stylesheet">
-	
-	
+
+	<!-- Styles -->
 	<link rel="stylesheet" href="inc/assets/css/jquery.classycountdown.css" />
-		
 	<link href="inc/assets/css/styles.css" rel="stylesheet">
-	
 	<link href="inc/assets/css/responsive.css" rel="stylesheet">
 	
 </head>
@@ -65,14 +62,14 @@
 	<script>
 		jQuery( function ($) {
 			// Show random Background-Image
-			let randomNumber = Math.floor(Math.random() * 20) - 15;
-			$('.main-arena').css('background-image','url(inc/assets/img/countdown-' + randomNumber + '-1600x900.jpg);')
+			var images = ['countdown-1.jpg', 'countdown-2.jpg', 'countdown-3.jpg', 'countdown-4.jpg'];
+			$('.main-area').css({'background-image': 'url(inc/assets/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+			
 			// Catch Url, remove http: and slash after url
 			let urlName = window.location.origin;
 			let shortUrl = urlName.slice(7, 22);
 				$('.urlName').html(shortUrl);
 		});
-
 	</script>
 	
 </body>
