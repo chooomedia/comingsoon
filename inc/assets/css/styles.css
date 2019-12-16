@@ -118,6 +118,10 @@ html {
 3. MAIN SECTION
 --------------------------------- */
 
+.title {
+	margin-top: 3rem;
+}
+
 .main-area-wrapper{ height: 100%; padding: 30px;}
 /* #videoBackground { position: absolute; top: 0; left: 0; } */
 
