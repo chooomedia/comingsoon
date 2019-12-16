@@ -23,7 +23,7 @@
 <body>
 	
 	<div class="main-area-wrapper">
-		<div class="main-area center-text" style="background-image:url(inc/assets/img/countdown-5-1600x900.jpg);">
+		<div class="main-area center-text">
 			
 			<div class="display-table">
 				<div class="display-table-cell">
@@ -64,7 +64,10 @@
 	<script src="inc/assets/js/scripts.js"></script>
 	<script>
 		jQuery( function ($) {
-			// CATCH URL NAME
+			// Show random Background-Image
+			let randomNumber = Math.floor(Math.random() * 20) - 15;
+			$('.main-arena').css('background-image','url(inc/assets/img/countdown-' + randomNumber + '-1600x900.jpg);')
+			// Catch Url, remove http: and slash after url
 			let urlName = window.location.origin;
 			let shortUrl = urlName.slice(7, 22);
 				$('.urlName').html(shortUrl);
