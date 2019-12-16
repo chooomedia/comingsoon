@@ -21,6 +21,9 @@
 	
 	<div class="main-area-wrapper">
 		<div class="main-area center-text">
+		<!--<video autoplay muted loop id="videoBackground">
+			<source src="./inc/assets/video/schufla-com-anwendungsvideo.mp4" type="video/mp4">
+		</video>-->
 			
 			<div class="display-table">
 				<div class="display-table-cell">
@@ -61,6 +64,12 @@
 	<script src="inc/assets/js/scripts.js"></script>
 	<script>
 		jQuery( function ($) {
+			// Optimize Dimensions Video
+			let wrapperHeight = $('.main-area').outerHeight();
+			let wrapperWidth = $('.main-area').outerWidth();
+			$('#videoBackground').css('height', + wrapperHeight + 'px');
+			console.log(wrapperHeight);
+
 			// Show random Background-Image
 			var images = ['countdown-1.jpg', 'countdown-2.jpg', 'countdown-3.jpg', 'countdown-4.jpg'];
 			$('.main-area').css({'background-image': 'url(inc/assets/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
