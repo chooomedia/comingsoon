@@ -123,7 +123,7 @@ html {
 3. MAIN SECTION
 --------------------------------- */
 
-.main-area-wrapper{ height: 100%; padding: 30px; }
+.main-area-wrapper{ height: 100%; padding: 36px; }
 .main-area-wrapper::after {content: "Image © Devon Rockola - pexels.com";
     color: #F5F5F5;
     font-size: .78rem;
