@@ -45,8 +45,9 @@
 					<div class="urlName"></div>
 					<b>Coming sooon</b>
 					</h1>
-					<p class="desc font-white"><span class="urlName"></span> - Wenn´s schneit & wenn´s regnat<br>
-						Wir arbeiten mit Hochdruck am Webshop, damit Schnee auf Dächern bald kein Stress mehr ist.</p>
+					<p class="desc font-white">Noch am <span class="urlName"></span><br>
+					Wenn´s schneit & wenn´s regnat<br>
+					Wir arbeiten mit Hochdruck am Webshop, damit Schnee auf Dächern bald kein Stress mehr ist.</p>
 					
 					<div id="normal-countdown" data-date="2020/01/15"></div>
 					
@@ -68,6 +69,7 @@
 					
 				</div><!-- display-table -->
 			</div><!-- display-table-cell -->
+			<div class="main-area-copy"></div>
 		</div><!-- main-area -->
 	</div><!-- main-area-wrapper -->
 		
@@ -82,14 +84,20 @@
 			let wrapperWidth = $('.main-area').outerWidth();
 			$('#videoBackground').css('height', + wrapperHeight + 'px');*/
 
-			// Show random Background-Image
-			var images = ['countdown-1.jpg', 'countdown-2.jpg', 'countdown-3.jpg', 'countdown-4.jpg'];
-			$('.main-area').css({'background-image': 'url(inc/assets/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+			// Array of Background-Images
+			var images = ['Adriaan-Greyling-pexels.com.jpg', 'Sindre-Strøm-pexels.com.jpg', 'Pixabay.com.jpg', 'Eberhard-Grossgasteiger-pexels.com.jpg'];
+			// Generate Random Number
+			var randomImage = images[Math.floor(Math.random() * images.length)];
+			// Inject random background-image into div
+			$('.main-area').css({'background-image': 'url(inc/assets/img/' + randomImage + ')'});
 			
+			// Cut String for Copywrite
+			$('.main-area-copy').html('Image © ' + randomImage.replace(/-|.jpg/g,' '));
+
 			// Catch Url, remove http: and slash after url
-			let urlName = window.location.origin;
-			let shortUrl = urlName.slice(7, 22);
-				$('.urlName').html(shortUrl);
+			let shortUrl = 'schufla.com' // window.location.origin;
+			//let shortUrl = urlName.slice(12, 23);
+			$('.urlName').html(shortUrl);
 		});
 	</script>
 	
