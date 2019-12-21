@@ -142,6 +142,19 @@ html {
 .main-area .notify-btn:hover{ background: none; }
 
 
+/* ---------------------------------
+3. IMPRESS SECTION
+--------------------------------- */
+.nav-button {margin: 0 auto;position: absolute;text-align: center;z-index: 2;bottom: 2.5rem;width: calc(100% - 6rem);left: 3rem;cursor: pointer;color:#FFF;}
+.clicked {color: #0099CC;}
+
+.impress { padding: 1.85rem;background: rgba(255,255,255,0.93);position: absolute;top: 1.85rem;
+    border-bottom: 3rem solid rgba(255,255,255,0.1);z-index: 1;height: calc(100vh - 3.7rem);overflow-y: scroll;width: calc(100% - 3.7rem);}
+
+.hidden {opacity: 0;transition: all .3s;}
+
+.active {opacity: 1;transition: all .3s;}
+
 /* TIME COUNTDOWN */
 
 #normal-countdown{ text-align: center; }
