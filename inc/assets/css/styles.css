@@ -126,7 +126,7 @@ html {
 /* #videoBackground { position: absolute; top: 0; left: 0; } */
 
 .main-area-copy { color: rgb(245, 245, 245); font-weight: 600;
-	font-size: 0.78rem; position: absolute; bottom: 1rem; right: 1rem; z-index: 9;
+	font-size: 0.78rem; position: absolute; bottom: .4rem; right: .4rem; z-index: 9;
 }
 	
 .main-area{ position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
