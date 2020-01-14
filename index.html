@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Coming sooon! CHOOOMEDIA</title>
+	<title>Coming soon! CHOOOMEDIA</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -48,7 +48,7 @@
 
 					<h1 class="title">
 						<div class="urlName"></div>
-						<b>Coming sooon</b>
+						<b>Coming soon</b>
 					</h1>
 					<p class="desc font-white">Noch am <span class="urlName"></span><br>
 						Wenn´s schneit & wenn´s regnat<br>
@@ -75,7 +75,6 @@
 
 				</div><!-- display-table -->
 			</div><!-- display-table-cell -->
-			<div class="main-area-copy"></div>
 		</div><!-- main-area -->
 		<span class="nav-button">IMPRESSUM</span>
 		<div class="impress hidden">
@@ -85,7 +84,7 @@
 			
 			<h2>Kontakt</h2>
 			
-			<p>Telefon: +436506522122<br>TE-Mail: schufla[at]schufla.com</p>
+			<p>Telefon: +436506522122<br>E-Mail: schufla[at]schufla.com</p>
 			
 			<h3>Streitschlichtung</h3>
 			
@@ -491,8 +490,8 @@
 			$('#videoBackground').css('height', + wrapperHeight + 'px');*/
 
 			// Array of Background-Images
-			var images = ['Adriaan-Greyling-pexels.com.jpg', 'Sindre-Strøm-pexels.com.jpg', 'Pixabay.com.jpg',
-				'Eberhard-Grossgasteiger-pexels.com.jpg'
+			var images = ['schufla-product-1-min.jpg','schufla-product-2-min.jpg',
+			'schufla-product-3-min.jpg','schufla-product-4-min.jpg'
 			];
 			// Generate Random Number
 			var randomImage = images[Math.floor(Math.random() * images.length)];
@@ -500,9 +499,6 @@
 			$('.main-area').css({
 				'background-image': 'url(inc/assets/img/' + randomImage + ')'
 			});
-
-			// Cut String for Copywrite
-			$('.main-area-copy').html('Image © ' + randomImage.replace(/-|.jpg/g, ' '));
 
 			// Catch Url, remove http: and slash after url
 			let shortUrl = 'SCHUFLA.com' // window.location.origin;
